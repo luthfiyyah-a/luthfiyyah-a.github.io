@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <!-- ini copas dari webnya, untuk makai iconnya bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portofolio 2 - pakai bootstrap</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <!-- karena warna navbarnya gelap, jd dibikin "navbar-dark", isi tulisannya auto jadi putih. tadinya "navbar-light", tulisannya hitam -->
+    <!-- fixed-top itu biar navbarnya gaikut ke scroll -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <!--  kalau mau custom warna sendiri (bukan dari bootstrap) : -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(51, 139, 173)"> -->
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Luthfiyyah hanifah amari</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- karena kita mau list-nya di kanan, jadi ditambahin "ms-auto" -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <!-- jumbotronnya dibikin style manual lagi pakai css -->
+    <section class="jumbotron text-center">
+      <img src="img/luthfiyyah.jpg" alt="Luthfiyyah" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4 fw-normal">Halo, Saya Luthfiyyah</h1>
+      <p class="lead fs-4">Mahasiswa teknik informatika ITS 2020 || Belajar web Programming</p>
+      <!-- untuk membuat gelombang. didapat dari website getwaves.io -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,256L40,224C80,192,160,128,240,101.3C320,75,400,85,480,117.3C560,149,640,203,720,192C800,181,880,107,960,74.7C1040,43,1120,53,1200,74.7C1280,96,1360,128,1400,144L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+      <!-- <!-- <hr class="my-4" /> -->
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <!-- mb = margin bottom.  -->
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-4 text-center mb-3">
+          <div class="col-md-8">
+            <p>
+              Saya adalah Mahasiswa Teknik informatika ITS 2020. Saya tertarik dengan UI/UX dan mempelajari web programming. Saya memiliki kemampuan dasar pemrograman dan struktur data dengan bahasa
+              C.
+            </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,192L40,202.7C80,213,160,235,240,213.3C320,192,400,128,480,112C560,96,640,128,720,170.7C800,213,880,267,960,250.7C1040,235,1120,149,1200,101.3C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>My projects</h2>
+          </div>
+        </div>
+
+        <!-- Baris Card -->
+        <!-- justify-content-sc itu agar isinya berada di tengah -->
+        <div class="row justify-content-center">
+          <!-- -md- itu buat responsive breakpoints nya. infix, jadi harus ditengah naruhnya. gunanya biar responsive, jd klo <middle, dia kolomnya cuman 1 -->
+          <div class="col-md-4 mb-3">
+            <!-- untuk membuat card -->
+            <div class="card">
+              <!-- tadinya ada width, tapi dihapus agar tulisannya memenuhi cardnya -->
+              <img src="img/projects/mogalulus.png" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <h5 class="card-title">mogalulus</h5>
+                <p class="card-text">Page notion yang berisi kumpulan bahan persiapan ujian UPMB ITS</p>
+                <a href="https://mogalulus.com/" class="stretched-link link-primary text-primary fw-bold">Kunjungi mogalulus</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/fp-sbd(2).png" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <h5 class="card-title">Aplikasi pengolahan sistem database</h5>
+                <p class="card-text">Aplikasi pengolahan sistem basis data menggunakan microsoft Access. Dikerjakan bersama teman saya, Rani</p>
+                <a href="https://youtu.be/mg2eDH9XCVQ" class="stretched-link text-primary fw-bold">Lihat video Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/projects/game_fp-pbo.png" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">Game Balonku</h5>
+                <p class="card-text">Game Balonku dibuat menggunakan bahasa pemrograman java dengan pemrograman berorientasi objek. Dikerjakan bersama teman saya, Ram</p>
+                <a href="#home" class="stretched-link link-primary text-primary fw-bold">Belum ada video demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,192L21.8,186.7C43.6,181,87,171,131,144C174.5,117,218,75,262,48C305.5,21,349,11,393,10.7C436.4,11,480,21,524,69.3C567.3,117,611,203,655,245.3C698.2,288,742,288,785,250.7C829.1,213,873,139,916,133.3C960,128,1004,192,1047,192C1090.9,192,1135,128,1178,96C1221.8,64,1265,64,1309,96C1352.7,128,1396,192,1418,224L1440,256L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Projects -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-md-6">
+            <!-- ini namanya form. cari aja di bootstrap -->
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email1" aria-describedby="email" />
+              </div>
+
+              <!-- namanya text area. dapet di bagian 'form control' -->
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,224L30,234.7C60,245,120,267,180,250.7C240,235,300,181,360,181.3C420,181,480,235,540,234.7C600,235,660,181,720,186.7C780,192,840,256,900,277.3C960,299,1020,277,1080,256C1140,235,1200,213,1260,192C1320,171,1380,149,1410,138.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <!-- p= padding -->
+    <footer class="bg-primary text-white text-center p-5">
+      <!-- fw-bold = font weight bold. ini utk bold -->
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/luthfiyyah_a/" class="text-white fw-bold">Luthfiyyah Hanifah Amari</a></p>
+      <p>
+        by following the tutorial from <a href="https://youtu.be/LkR-9Z1sle8" class="text-white fw-bold">NGOBAR#27 - Membuat Website Portfolio dengan BOOTSTRAP 5</a> on youtube Web Programming Unpas
+      </p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
